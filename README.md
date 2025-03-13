@@ -47,9 +47,9 @@ To generate stimuli:
 
 NOTE: Generating stimuli is the most time consuming step as 10,282*4 images need to be created. The script has an option to generate the stimuli for a set of blocks at a time (recommended). 
 
-    python3 -m python.src.experiment.02_generate_stimuli --img_dir=data/vsgui10k-images --sample_filepath=output/sample/vsgui10k_sample_balanced.csv --target_filepath=data/vsgui10k_targets.csv --experiment_dir=output/experiment --font_file=<PATH TO FONT FILE> --max_block=0 --min_block=1 --balance --fixation_cross 
+    python3 -m python.src.experiment.02_generate_stimuli --img_dir=data/vsgui10k-images --sample_filepath=output/sample/vsgui10k_sample_balanced.csv --target_filepath=data/vsgui10k_targets.csv --experiment_dir=output/experiment --font_file=<PATH TO FONT FILE> --max_block=1 --min_block=0 --balance --fixation_cross 
 
-To generate stimuli images, note that you need to pass a font file in <PATH TO FONT FILE>.
+To generate stimuli images, note that you need to pass a font file in <PATH TO FONT .ttf FILE>.
 
 ## If you want to pre-process Gazepoint data
 
