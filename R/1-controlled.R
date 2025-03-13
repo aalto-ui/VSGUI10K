@@ -37,6 +37,8 @@ df <- read.csv("output/data/vsgui10k_search_times.csv", header = T) %>%
 df$cue <- relevel(df$cue, ref = "Image")   # Change baselines here to check for alternatives
 df$category <- relevel(df$category, ref = "Web")
 
+path <- "output/figs" # Save figs here
+dir.create(path)
 path <- "output/figs/1-controlled" # Save figs here
 dir.create(path)
 
