@@ -23,7 +23,7 @@ If you want to plot Fig. 10, you also need to download the UEyes data: https://z
 
 Managing environments with ```conda```:
 
-    conda create -n vsgui python=3.12 
+    conda env create -f environment.yml
 
     conda activate vsgui
 
@@ -57,7 +57,7 @@ Then, search times are aggregated using:
 
     python3 -m python.src.pre_process.01_pre_process_search_times
 
-Coverage data is calculated using (needed for Fig. 5):
+Coverage data is calculated using (needed for Fig. 5, this takes a while):
 
     python3 -m python.src.pre_process.02_pre_process_coverage
 
