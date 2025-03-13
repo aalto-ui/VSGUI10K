@@ -87,7 +87,9 @@ The LMER (and GLMER) models are presented in:
 
 ## If you want to plot the figures...
 
-Make sure that you have run above (except stimuli generation scripts) before plotting. The scripts used to produce figures are stored in <python/plots>. Run each script to produce the desired plot.
+Make sure that you have run above (except stimuli generation scripts) before plotting. The scripts used to produce figures are stored in <python/plots>. Run each script to produce the desired plot. For instance,
+
+    python3 -m python.plots.fig0_graphical_abstract
 
 Note that regression-related Figures (3, 7, 9 in main paper) are plotted via R.
 
