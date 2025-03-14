@@ -94,7 +94,7 @@ Make sure that you have run above (except stimuli generation scripts) before plo
 Note that regression-related Figures (3, 7, 9 in main paper) are plotted via R.
 
 ## Authors and acknowledgment
-Generative AI was used in preparing this code (Aalto AI, GPT4o, February--March 2025).
+Authors of the accompanying publication contributed to this project. Generative AI was used in preparing this code (Aalto AI, GPT4o, February--March 2025).
 
 ## Citation
 If you use ```VSGUI10K``` in your own work, please cite: 
