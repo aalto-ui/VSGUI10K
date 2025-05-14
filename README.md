@@ -1,6 +1,6 @@
 # VSGUI10K
 
-This repository accompanies the paper "Understanding Visual Search in Graphical User Interfaces" published in International Journal of Human-Computer Studies (March, 2025).
+This repository accompanies the paper "Understanding Visual Search in Graphical User Interfaces" published in International Journal of Human-Computer Studies (March, 2025), licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
 
 ## What's in this repository?
 
