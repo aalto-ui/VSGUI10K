@@ -111,10 +111,10 @@ def main():
     # all_data_grouped["search_time_norm"] = all_data_grouped.search_time / all_data_grouped.search_time_max
     # logging.info(f"Number of trials: {len(np.unique(all_data_grouped.new_img_name))}")
 
-    # logging.info("Adding distance to targets.")
+    logging.info("Adding distance to targets.")
     # # Add distance of target to fixation cross
-    # all_data_grouped["tgt_x_center_from_fixation_cross"] = np.abs(all_data_grouped["tgt_x"] + all_data_grouped["tgt_width"] / 2 - 0.5) 
-    # all_data_grouped["tgt_y_center_from_fixation_cross"] = np.abs(all_data_grouped["tgt_y"] + all_data_grouped["tgt_height"] / 2 - 0.5) 
+    all_data_grouped["tgt_x_center_from_fixation_cross"] = np.abs(all_data_grouped["tgt_x"] + all_data_grouped["tgt_width"] / 2 - 0.5) 
+    all_data_grouped["tgt_y_center_from_fixation_cross"] = np.abs(all_data_grouped["tgt_y"] + all_data_grouped["tgt_height"] / 2 - 0.5) 
 
     # Save visual search data
     logging.info("Saving data...")
