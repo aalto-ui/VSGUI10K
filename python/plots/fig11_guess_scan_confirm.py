@@ -8,6 +8,8 @@ def main():
     """
     Plot Fig. 11 for Guess-Scan-Confirm. Note that the function plot_three_step can be used to inspect different Guess-Scan-Confirm cutoffs.
 
+    Also plot Figs. 23-24 in the Supplementary Materials.
+
     Saves plots to output/figs
     """
     # Set for plotting
@@ -32,6 +34,10 @@ def main():
     plot_three_step(FPOGID_min=3, FPOGID_max_lower_bound=7, FPOGID_max_upper_bound=fixations.FPOGID_MAX.max(), 
                     scan_lower=5, scan_higher=2, filename="fig11.pdf", fixation_cross=False, 
                     fixations=fixations, df_target=df_target)
+    
+    plot_three_step(FPOGID_min = 0, FPOGID_max_lower_bound = 0, FPOGID_max_upper_bound = 13, scan_lower = 0.2, scan_higher = 0.8, filename="supplement/supp_fig23.pdf", fixation_cross=False, fixations=fixations, df_target=df_target) # Prints for supplement
+    
+    plot_three_step(FPOGID_min = 0, FPOGID_max_lower_bound = 13, FPOGID_max_upper_bound = fixations.FPOGID_MAX.max(), scan_lower = 0.2, scan_higher = 0.8, filename="supplement/supp_fig24.pdf", fixation_cross=False, fixations=fixations, df_target=df_target) # Prints for supplement
 
 if __name__ == "__main__":
     main()
