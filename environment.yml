@@ -55,7 +55,7 @@ dependencies:
   - seaborn=0.13.2
   - seaborn-base=0.13.2
   - setuptools=75.8.0
-  - shapely=2.0.7
+  - shapely=2.1.1
   - six=1.16.0
   - sqlite=3.45.3
   - statsmodels=0.14.4

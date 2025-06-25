@@ -15,7 +15,7 @@ This repository contains scripts related to:
 
 ## Where's the data?
 
-Please download the data from: https://osf.io/hmg9b/.
+Please download the data from: https://osf.io/hmg9b/. Files are read from the ```data``` folder, so it should be added to the root of this project.
 
 If you want to plot Fig. 10, you also need to download the UEyes data: https://zenodo.org/records/8010312.
 
@@ -65,7 +65,7 @@ Distance to targets is evaluated using (needed for Fig 12.):
 
     python3 -m python.src.pre_process.03_get_target_found_trials
 
-The UEyes data is pulled from a directory <UEYES_DIR>; the path in your system is defined in <untracked_config/utnracked_config.py>. Process data using:
+The UEyes data is pulled from a directory <UEYES_DIR>; the path in your system is defined in <untracked_config/utnracked_config.py>. Create this folder and generate a variable called ```UEYES_DIR``` pointing to the correct path. Process data using:
 
     python3 -m python.src.pre_process.ueyes.00_pre_process_ueyes
 
@@ -85,16 +85,20 @@ The LMER (and GLMER) models are presented in:
     2-visual-complexity.R
     3-interaction.R
 
+The models presented in supplement are in 
+
+    4-supplement.R
+
 ## If you want to plot the figures...
 
 Make sure that you have run above (except stimuli generation scripts) before plotting. The scripts used to produce figures are stored in <python/plots>. Run each script to produce the desired plot. For instance,
 
     python3 -m python.plots.fig0_graphical_abstract
 
-Note that regression-related Figures (3, 7, 9 in main paper) are plotted via R.
+Note that regression-related Figures (3, 7, 9 in main paper; 13-22 in Supplementary Materials) are plotted via R.
 
 ## Authors and acknowledgment
-Authors of the accompanying publication contributed to this project. Generative AI was used in preparing this code (Aalto AI, GPT4o, February--March 2025).
+Authors of the accompanying publication contributed to this project. Generative AI was used in preparing this code (Aalto AI, GPT4o, February--March 2025). 
 
 ## Citation
 If you use ```VSGUI10K``` in your own work, please cite: 
